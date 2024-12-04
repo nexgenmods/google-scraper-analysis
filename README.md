@@ -1,1 +1,6 @@
-Hello world
+![](images/free_vs_paid.png)
+![](images/IAP.png)
+![](images/genres.png)
+![](images/price_ranges.png)
+![](images/avg_reviews.png)
+![](images/permissions.png)

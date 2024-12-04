@@ -3,4 +3,4 @@
 ![](images/genres.png)
 ![](images/price_ranges.png)
 ![](images/avg_reviews.png)
-![](images/permissions.png)
+![](images/pe5.png)

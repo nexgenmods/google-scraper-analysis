@@ -1,0 +1,11 @@
+{
+    "mean_permissions": {
+        "Finance": 8.8,
+        "Health": 8.8,
+        "education": 6.4,
+        "entertainment": 9.0,
+        "games": 4.6,
+        "shopping": 9.2,
+        "social media": 12.2
+    }
+}

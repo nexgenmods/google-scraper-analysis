@@ -50,17 +50,26 @@ output_data = {
     "mean_permissions": mean_permissions
 }
 
-# Write to JSON file
 output_file = "permissions.json"
-with open(output_file, "w") as file:
+
+# Writing results to JSON file with exception handling
+try:
+    file = open(output_file, 'w')
     json.dump(output_data, file, indent=4)
+    file.close()  # Explicitly closing the file after operation
+    print(f"Results written to {output_file}")
+except Exception as e:
+    print(f"Error writing to {output_file}: {e}")
 
-# End of scraping and writing to JSON file
-print(f"Results written to {output_file}")
-
-# Reading values from the JSON file
-with open('permissions.json', 'r') as json_file:
-    app_data = json.load(json_file)
+# Reading values from JSON file with exception handling
+try:
+    file = open(output_file, 'r')
+    app_data = json.load(file)
+    file.close()  # Explicitly closing the file after operation
+    print(f"Data successfully read from {output_file}")
+except Exception as e:
+    print(f"Error reading from {output_file}: {e}")
+    app_data = {}
 
 # Extract mean_permissions directly
 mean_permissions = app_data["mean_permissions"]

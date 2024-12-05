@@ -1,6 +1,6 @@
 ![](images/free_vs_paid.png)
 ![](images/IAP.png)
 ![](images/genres.png)
-![](images/price_ranges.png)
+![](images/common_prices.png)
 ![](images/avg_reviews.png)
-![](images/pe5.png)
+![](images/permissions.png)

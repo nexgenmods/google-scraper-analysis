@@ -1,4 +1,4 @@
-#free vs paid apps
+# prices of paid apps
 
 import json
 import pandas as pd
@@ -7,13 +7,10 @@ from google_play_scraper import search
 
 # Sample data for demonstration purposes
 queries = [
-    "best Pikachu game",
-    "best Pokemon game",
-    "best adventure game",
-    "best RPG game",
-    "best strategy game",
-    "free apps",
-    "paid apps"
+    "top paid games",
+    "premium games",
+    "premium video games",
+    "paid apps",
 ]
 
 all_results = []
@@ -31,17 +28,18 @@ for query in queries:
 # Create a DataFrame
 df = pd.DataFrame(all_results)
 
-# Count free and paid apps
-free_apps = df[df["free"]].shape[0]
-paid_apps = df[~df["free"]].shape[0]
+# Filter out free apps
+paid_apps = df[df['price'] > 0]
+
+# Group by price and count the number of apps in each price
+price_counts = paid_apps['price'].value_counts().sort_index()
 
 # Prepare the output JSON
 output_data = {
-    "free_apps": free_apps,
-    "paid_apps": paid_apps
+    "price_counts": price_counts.to_dict()  # Convert Series to dictionary for JSON serialization
 }
 
-output_file = "free_vs_paid.json"
+output_file = "common_prices.json"
 
 # Writing results to JSON file with exception handling
 try:
@@ -62,23 +60,16 @@ except Exception as e:
     print(f"Error reading from {output_file}: {e}")
     app_data = {}
 
-# Directly accessing the values
-free_apps = app_data['free_apps']
-paid_apps = app_data['paid_apps']
-
-# Visualization using matplotlib
-categories = ["Free Apps", "Paid Apps"]
-counts = [free_apps, paid_apps]
-
-plt.figure(figsize=(8, 6))
-plt.bar(categories, counts, color=["teal", "orange"])
-plt.title("Free vs Paid Apps")
-plt.ylabel("Number of Apps")
-plt.xlabel("App Category")
-plt.grid(axis="y", linestyle="--", alpha=0.7)
-
-# Show the bar chart
-plt.tight_layout()
-plt.show()
-
-
+# Visualization for price using a bar plot
+if "price_counts" in app_data:
+    price_counts = pd.Series(app_data["price_counts"])
+    plt.figure(figsize=(10, 6))
+    plt.bar(price_counts.index.astype(str), price_counts.values)
+    plt.title("Common prices of Paid Apps")
+    plt.xlabel("Price (USD)")
+    plt.ylabel("Number of Apps")
+    plt.xticks(rotation=45, ha="right")  # Rotate price labels for better readability
+    plt.grid(axis="y", linestyle="--", alpha=0.7)
+    plt.show()
+else:
+    print("No data found to plot.")

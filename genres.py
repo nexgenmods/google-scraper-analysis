@@ -41,17 +41,26 @@ output_data = {
     "genre_counts": genre_counts.to_dict()
 }
 
-# Write the result to a file
 output_file = "genre_counts.json"
-with open(output_file, "w") as file:
+
+# Writing results to JSON file with exception handling
+try:
+    file = open(output_file, 'w')
     json.dump(output_data, file, indent=4)
+    file.close()  # Explicitly closing the file after operation
+    print(f"Results written to {output_file}")
+except Exception as e:
+    print(f"Error writing to {output_file}: {e}")
 
-# End of scraping and writing to json file
-print(f"Results written to {output_file}")
-
-# Reading values from json file
-with open('genre_counts.json', 'r') as json_file:
-    genre_data = json.load(json_file)
+# Reading values from JSON file with exception handling
+try:
+    file = open(output_file, 'r')
+    genre_data = json.load(file)
+    file.close()  # Explicitly closing the file after operation
+    print(f"Data successfully read from {output_file}")
+except Exception as e:
+    print(f"Error reading from {output_file}: {e}")
+    genre_data = {}
 
 # Directly accessing the genre counts
 genre_counts = genre_data['genre_counts']

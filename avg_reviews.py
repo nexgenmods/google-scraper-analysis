@@ -1,5 +1,3 @@
-#avg reviews per realinstalls of free vs paid apps
-
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -74,9 +72,34 @@ paid_apps = df[df['free'] == False]
 avg_reviews_free = free_apps['avg_reviews_per_install'].mean()
 avg_reviews_paid = paid_apps['avg_reviews_per_install'].mean()
 
+# Prepare output data
+output_data = {
+    'Free Apps': avg_reviews_free,
+    'Paid Apps': avg_reviews_paid
+}
+
+output_file = "average_reviews_per_install_comparison.json"
+
+# Write results to JSON file
+try:
+    with open(output_file, 'w') as file:
+        json.dump(output_data, file, indent=4)
+    print(f"Results written to {output_file}")
+except Exception as e:
+    print(f"Error writing to {output_file}: {e}")
+
+# Read values from JSON file
+try:
+    with open(output_file, 'r') as file:
+        app_data = json.load(file)
+    print(f"Data successfully read from {output_file}")
+except Exception as e:
+    print(f"Error reading from {output_file}: {e}")
+    app_data = {}
+
 # Prepare data for visualization
-categories = ['Free Apps', 'Paid Apps']
-avg_reviews = [avg_reviews_free, avg_reviews_paid]
+categories = list(app_data.keys())
+avg_reviews = list(app_data.values())
 
 # Plot the comparison
 plt.figure(figsize=(8, 5))
@@ -88,17 +111,3 @@ plt.tight_layout()
 
 # Show the graph
 plt.show()
-
-# Prepare output data
-output_data = {
-    'Free Apps': avg_reviews_free,
-    'Paid Apps': avg_reviews_paid
-}
-
-# Write the result to a JSON file
-output_file = "average_reviews_per_install_comparison.json"
-with open(output_file, "w") as file:
-    json.dump(output_data, file, indent=4)
-
-# End of scraping and writing to json file
-print(f"Results written to {output_file}")

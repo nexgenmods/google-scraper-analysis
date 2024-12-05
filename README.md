@@ -1,5 +1,3 @@
-![](images/free_vs_paid.png)
-![](images/IAP.png)
 ![](images/genres.png)
 ![](images/common_prices.png)
 ![](images/avg_reviews.png)

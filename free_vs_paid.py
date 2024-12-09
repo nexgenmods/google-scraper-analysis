@@ -1,4 +1,4 @@
-# Free vs Paid Apps:
+# Free vs Paid Apps
 # Compares the number of free and paid apps in the pulled data.
 
 import json

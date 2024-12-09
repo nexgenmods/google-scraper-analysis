@@ -62,12 +62,12 @@ Generates evenly spaced values for colormap mapping.
 ```python <filename.py>```
 
 ### Example:
-```python free_vs_paid.py```
-```python IAP.py```
-```python genres.py```
-```python common_prices.py```
-```python avg_reviews.py```
-```python permissions.py```
+```python free_vs_paid.py
+python IAP.py
+python genres.py
+python common_prices.py
+python avg_reviews.py
+python permissions.py```
 
 ## Sample Visualizations:
 ### Free vs Paid Apps:

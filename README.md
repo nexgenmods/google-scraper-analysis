@@ -13,22 +13,22 @@ It allows for analyzing and comparing trends such as free vs paid apps and visua
 Manually collecting app store data is slow and error-prone, but our project simplifies the process by automating data collection and analysis.
 
 ## Features & Insights:
-- Free vs Paid Apps
+- Free vs Paid Apps  
 Compares the number of free and paid apps in the pulled data.
 
-- In-App Advertisements (IAP)
+- In-App Advertisements (IAP)  
 Highlights the number of apps with and without in-app advertisements.
 
-- App Genres
+- App Genres  
 Categorizes apps based on their genres using keywords.
 
-- Common Prices
+- Common Prices  
 Displays the most common pricing for paid apps.
 
-- Average Reviews
+- Average Reviews  
 Shows the average number of reviews given by users per install.
 
-- Permissions
+- Permissions  
 Identifies app categories that request the most permissions.
 
 ## Prerequisites:

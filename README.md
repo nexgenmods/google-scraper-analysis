@@ -34,7 +34,7 @@ Manually collecting app store data is slow and error-prone, but our project simp
 ## Prerequisites:
 Before running the scripts, ensure you have the following installed:
 
-1. **Google Play Scraper**  
+1. **Google Play Scraper**
 Automatically collects app data from the Google Play Store.  
 
 ```

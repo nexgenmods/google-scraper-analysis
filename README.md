@@ -36,39 +36,36 @@ Before running the scripts, ensure you have the following installed:
 
 1. **Google Play Scraper**  
 Automatically collects app data from the Google Play Store.  
-```
-pip install google-play-scraper
-```
+
+```pip install google-play-scraper```
 
 2. Pandas
 Organizes data into tables (data frames) for easy filtering.
-```
-pip install pandas
-```
+
+```pip install pandas```
 
 3. JSON
 Saves collected data in a structured and readable format.
-```
-pip install json
-```
+
+```pip install json```
 
 4. Matplotlib
 Visualizes insights using bar and gradient graphs.
-```
-pip install matplotlib
-```
+
+```pip install matplotlib```
 
 5. NumPy
 Generates evenly spaced values for colormap mapping.
-```
-pip install numpy
-```
+
+```pip install numpy```
 
 ## Getting Started:
 1. Clone this repository or download the code as a ZIP file:  
+
 ```git clone https://github.com/nexgenmods/gta5-modding-utils```
 
 2. Navigate to your project directory and run the desired scripts using:
+
 ```python <filename.py>```
 
 ### Example:

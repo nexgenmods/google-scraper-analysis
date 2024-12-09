@@ -34,35 +34,35 @@ Manually collecting app store data is slow and error-prone, but our project simp
 ## Prerequisites:
 Before running the scripts, ensure you have the following installed:
 
-1. **Google Play Scraper**
+1. **Google Play Scraper**  
 Automatically collects app data from the Google Play Store.  
 
 ```
 pip install google-play-scraper
 ```
 
-2. **Pandas**
+2. **Pandas**  
 Organizes data into tables (data frames) for easy filtering.
 
 ```
 pip install pandas
 ```
 
-3. **JSON**
+3. **JSON**  
 Saves collected data in a structured and readable format.
 
 ```
 pip install json
 ```
 
-4. **Matplotlib**
+4. **Matplotlib**  
 Visualizes insights using bar and gradient graphs.
 
 ```
 pip install matplotlib
 ```
 
-5. **NumPy**
+5. **NumPy**  
 Generates evenly spaced values for colormap mapping.
 
 ```

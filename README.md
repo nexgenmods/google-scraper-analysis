@@ -16,8 +16,8 @@ Manually collecting app store data is slow and error-prone, but our project simp
 - Free vs Paid Apps  
 Compares the number of free and paid apps in the pulled data.
 
-- In-App Advertisements (IAP)  
-Highlights the number of apps with and without in-app advertisements.
+- In-App Purchases (IAP)  
+Highlights the number of apps with and without in-app purchases.
 
 - App Genres  
 Categorizes apps based on their genres using keywords.
@@ -100,7 +100,7 @@ python permissions.py
 ## Sample Visualizations:
 ### Free vs Paid Apps:
 ![](images/free_vs_paid.png)
-### In-App Advertisements (IAP):
+### In-App Purchases (IAP):
 ![](images/IAP.png)
 ### App Genres:
 ![](images/genres.png)

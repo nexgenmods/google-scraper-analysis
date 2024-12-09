@@ -60,13 +60,18 @@ Generates evenly spaced values for colormap mapping.
 ```pip install numpy```
 
 ## Getting Started:
-1. Clone this repository or download the code as a ZIP file:  
+1. Clone this repository using git:  
+```git clone https://github.com/srikar2077/gta5-modding-utils```
 
-```git clone https://github.com/nexgenmods/gta5-modding-utils```
+or download the code as a ZIP file
+```https://github.com/srikar2077/google-scraper-analysis/archive/refs/heads/main.zip```
 
 2. Navigate to your project directory and run the desired scripts using:
 
-```python <filename.py>```
+```
+cd <project_path>
+python <filename.py>
+```
 
 ### Example:
 ```

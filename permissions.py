@@ -1,3 +1,6 @@
+# Permissions
+# Identifies app categories that request the most permissions
+
 import json
 import pandas as pd
 import matplotlib.pyplot as plt

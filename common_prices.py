@@ -1,4 +1,5 @@
-# prices of paid apps
+# Common Prices
+# Displays the most common pricing for paid apps.
 
 import json
 import pandas as pd

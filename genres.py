@@ -1,4 +1,5 @@
-## genres of top 100 apps - using gradient (cm, numpy incl.)
+# App Genres
+# Categorizes apps based on their genres using keywords.
 
 import json
 import pandas as pd

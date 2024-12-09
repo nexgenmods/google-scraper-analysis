@@ -1,4 +1,5 @@
-# offers IAP or not using app ids
+# In-App Advertisements (IAP)
+# Highlights the number of apps with and without in-app advertisements.
 
 import json
 import pandas as pd

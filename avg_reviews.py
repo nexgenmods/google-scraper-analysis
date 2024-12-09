@@ -1,3 +1,6 @@
+# Average Reviews
+# Shows the average number of reviews given by users per install.
+
 import json
 import pandas as pd
 import matplotlib.pyplot as plt

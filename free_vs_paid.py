@@ -1,4 +1,5 @@
-#free vs paid apps
+# Free vs Paid Apps:
+# Compares the number of free and paid apps in the pulled data.
 
 import json
 import pandas as pd

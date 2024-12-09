@@ -9,7 +9,7 @@
 
 ## Project Goal:
 The **PlayStore Datahub** project aims to automate the process of retrieving app data from the Google Play Store.  
-It allows for analyzing and comparing trends such as free vs paid apps and visualizing insights through graphs.  
+It allows for analyzing and comparing trends of app attributes and visualizing insights through graphs.  
 Manually collecting app store data is slow and error-prone, but our project simplifies the process by automating data collection and analysis.
 
 ## Features & Insights:

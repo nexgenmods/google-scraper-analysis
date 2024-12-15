@@ -110,3 +110,5 @@ python permissions.py
 ![](images/avg_reviews.png)
 ### Permissions:
 ![](images/permissions.png)
+
+(Last updated on 12/15/2024)
